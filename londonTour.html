@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script defer src="./JS/index.js"></script>
+    <script defer src="./JS/ratings.js"></script>
+    <script defer src="./JS/offers.js"></script>
+    <script defer src="./JS/gallery.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1834/1834573.png">
+    <title>UK-Tours - London</title>
+</head>
+<body data-type="london-page">
+    <div id="animate-menu">
+
+    </div>
+    <main>
+        <div id="header-info">
+            <p>Mail: department@uktours.com</p>
+        </div>
+        <header>
+            <div id="banner">
+                <div id="uk-tours-logo">
+                    <img src="./IMGS/logoUkFlag.png" alt="Logo">
+                    <h1>UK Tours</h1>
+                </div>
+                <div id="banner-info">
+                    <h2>UK Tours Department</h2>
+                    <i><p class="courgetteFont">Currently viewing: London</p></i>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#header-info">To top</a></li>
+                    <li><a href="./index.html">Main page</a></li>
+                    <li id="drop-down-tours">
+                        <p>Tours</p>
+                        <ul>
+                            <li><a href="./londonTour.html">London tour</a></li>
+                            <li><a href="./cardiffTour.html">Cardiff tour</a></li>
+                            <li><a href="./edinburghTour.html">Edinburgh tour</a></li>
+                            <li><a href="./belfastTour.html">Belfast tour</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <h1 class="contentHeader courgetteFont">London....</h1>
+            <p class = "contentParagraph">....London is a city that needs no introduction. With a history dating back over 2,000 years, this iconic metropolis is a global cultural hub, offering an unmatched blend of old-world charm and modern-day sophistication.</p>
+                <p class = "contentParagraph">From the majestic architecture of Big Ben and the Houses of Parliament to the royal pomp and pageantry of Buckingham Palace, London's landmarks are among the most recognizable in the world. But beyond the postcard-perfect façade lies a vibrant city teeming with life, creativity, and diversity.</p>
+                <p class = "contentParagraph">Whether you're strolling along the Thames, browsing the shops of Oxford Street, or exploring the hidden alleys of Covent Garden, London is a city that rewards the curious and the intrepid. With world-class museums like the British Museum, Tate Modern, and the National Gallery, as well as top-notch theaters and music venues, there's no shortage of cultural offerings to enjoy.</p>
+                <p class = "contentParagraph">But perhaps what makes London truly special is its people. A melting pot of cultures and backgrounds, London is a city that welcomes everyone with open arms. From the street vendors selling kebabs and curries to the fashionistas strutting their stuff in Soho, London is a place where anything is possible.</p>
+                <p class = "contentParagraph">So whether you're visiting for the first time or the hundredth, London is a city that never ceases to amaze and inspire. With so much to see and do, it's no wonder that it's one of the world's most beloved cities.
+            </p>
+        </section>
+        <section id="gallery">
+            <img src="IMGS/LONDON/z1.jpg" id="big" class ="galleryImg"><br>
+            <div id="small-img-holder">
+                <img src="IMGS/LONDON/z1.jpg" class="small" onclick="changeImage(this)" style="opacity: 1;">
+                <img src="IMGS/LONDON/z2.jpg" class="small" onclick="changeImage(this)">
+                <img src="IMGS/LONDON/z3.jpg" class="small" onclick="changeImage(this)">
+                <img src="IMGS/LONDON/z4.jpg" class="small" onclick="changeImage(this)">
+            </div>
+        </section><br>
+        <section id="ratings">
+            <h1 class="courgetteFont">Ratings</h1>
+            <div id="cards-holder">
+                
+            </div>
+            <button class="btn" onclick="openRating()">Add rating</button>
+        </section>
+        <hr>
+        <section id="star-customisation">
+            <h1 class="courgetteFont">Filter through offers...</h1>
+            <div>
+                <label for="one-star-radio" onclick="changeOffer(1)">
+                    <input type="radio" id="one-star-radio" name="stars" checked>
+                    <img src="./IMGS/starFilled.png">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="two-star-radio" onclick="changeOffer(2)">
+                    <input type="radio" id="two-star-radio" name="stars">
+                    <img src="./IMGS/starFilled.png">
+                    <img src="./IMGS/starFilled.png">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="three-star-radio" onclick="changeOffer(3)">
+                    <img src="./IMGS/starFilled.png">
+                    <img src="./IMGS/starFilled.png">
+                    <img src="./IMGS/starFilled.png">
+                    <input type="radio" id="three-star-radio" name="stars">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </section>
+        <article data="one-star">
+            <section>
+                <h1 class="courgetteFont contentHeader">1 star offer</h1>
+                <p class="contentParagraph">
+                    <i><b>Accomodation:</b></i> 2 stars Sophia hotel
+                    <br>
+                    <i><b>Attractions:</b></i>
+                </p>
+                <ul class="contentParagraph">
+                    <li><a href="https://www.britishmuseum.org" target="_blank" title="Check their site">British museum</a></li>
+                </ul>
+            </section>
+            <section>
+                <h1 class="courgetteFont contentHeader">Day 1:</h1>
+                <p class="contentParagraph">
+                    You will start your day by visiting the iconic British Museum to see its impressive collection of art and artifacts from around the world.
+                    <br>
+                    Next, you will visit Covent Garden, known for its independent cafes, pubs, and shopping.
+                    <br>
+                    Finally, you will visit the Houses of Parliament and Big Ben to take in their stunning architecture.
+                </p>
+            </section>
+            <section>
+                <h1 class="courgetteFont contentHeader">Day 2:</h1>
+                <p class="contentParagraph">
+                    You will start your day by taking a ride on the London Eye for panoramic views of the city.
+                    <br>
+                    After that, you will visit the Tower of London to learn about its history and see the Crown Jewels.
+                    <br>
+                    Finally, you will walk across the Tower Bridge and visit the Tower Bridge Exhibition to learn about the bridge's design and construction.
+                </p>
+            </section>
+            <section>
+                <h1 class="courgetteFont contentHeader">Day 3:</h1>
+                <p class="contentParagraph">
+                    You will start your day by visiting the Natural History Museum to see the impressive collection of natural specimens and learn about the history of life on Earth.
+                    <br>
+                    Next, you will visit the Royal Observatory in Greenwich to learn about the history of astronomy and see the Prime Meridian line.
+                    <br>
+                    Finally, you will take a stroll through Hyde Park, one of London's largest parks, and enjoy the beautiful greenery and lake.
+                </p>
+            </section>
+        </article>
+        <article data="two-star">
+            <section>
+                <h1 class="courgetteFont contentHeader">Day 1:</h1>
+                <p class="contentParagraph">
+                    You will start your day by visiting the Tower of London to learn about its history and see the Crown Jewels.
+                    <br>
+                    After that, you will walk across the Tower Bridge and visit the Tower Bridge Exhibition to learn about the bridge's design and construction.
+                    <br>
+                    You will then take a boat ride on the River Thames to see the city's famous landmarks.
+                </p>
+            </section>
+            <section>
+                <h1 class="courgetteFont contentHeader">Day 2:</h1>
+                <p class="contentParagraph">
+                    You will visit the British Museum to see the world-renowned collection of art and artifacts from around the globe, including the Rosetta Stone and the Parthenon sculptures.
+                    <br>
+                    Next, you will visit St. Paul's Cathedral, designed by Sir Christopher Wren, and admire its stunning dome and interior.
+                    <br>
+                    Finally, you will visit Covent Garden, known for its independent cafes, pubs, and shopping.
+                </p>
+            </section>
+            <section>
+                <h1 class="courgetteFont contentHeader">Day 3:</h1>
+                <p class="contentParagraph">
+                    You will start your day with a ride on the London Eye for panoramic views of the city.
+                    <br>
+                    You will then visit the Southbank Centre to see what exhibitions and performances are on during your visit.
+                    <br>
+                    Finally, you will visit the Tate Modern museum to see works by famous artists such as Pablo Picasso and Andy Warhol.
+                </p>
+            </section>
+        </article>
+        <article data="three-star">
+            <h1>Three star</h1>
+        </article>
+        <footer>
+            <div>
+                <a href = "tel"><img src = "https://cdn-icons-png.flaticon.com/512/126/126509.png" class = "footerIcons">Call us!</a>
+                <a href="mailto:department@uktours.com"><img src = "https://cdn-icons-png.flaticon.com/512/646/646094.png" class = "footerIcons">Mail us!</a><br>
+            </div>
+            <p id="footerPar">®UK Tours | All rights reserved</p>
+        </footer>
+    </main>
+
+    <div id="add-rating-holder">
+        <div id="add-rating-box">
+            <h1 class="courgetteFont contentHeader">Add rating...</h1>
+            <h1 class="close-btn contentHeader" onclick="closeRating()" title="Close">X</h1>
+            <div>
+                <p>Email:<input type="email" id="rating-email"></p>
+                <div>
+                    <p>Stars:</p>
+                    <img src="./IMGS/starUnfilled.png" id="star-1" onclick="changeStars(1)">
+                    <img src="./IMGS/starUnfilled.png" id="star-2" onclick="changeStars(2)">
+                    <img src="./IMGS/starUnfilled.png" id="star-3" onclick="changeStars(3)">
+                    <img src="./IMGS/starUnfilled.png" id="star-4" onclick="changeStars(4)">
+                    <img src="./IMGS/starUnfilled.png" id="star-5" onclick="changeStars(5)">
+                </div>
+                <p>Content:</p>
+                <textarea id="rating-description"></textarea>
+            </div>
+            <button class="btn" onclick="addRating()">
+                Add rating
+            </button>
+        </div>
+    </div>
+</body>
+</html>

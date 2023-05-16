@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script defer src="./JS/index.js"></script>
+    <script defer src="./JS/ratings.js"></script>
+    <script defer src="./JS/offers.js"></script>
+    <script defer src="./JS/gallery.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1834/1834573.png">
+    <title>UK-Tours - Cardiff</title>
+</head>
+<body data-type="cardiff-page">
+    <div id="animate-menu">
+
+    </div>
+    <main>
+        <div id="header-info">
+            <p>Mail: department@uktours.com</p>
+        </div>
+        <header>
+            <div id="banner">
+                <div id="uk-tours-logo">
+                    <img src="./IMGS/logoUkFlag.png" alt="Logo">
+                    <h1>UK Tours</h1>
+                </div>
+                <div id="banner-info">
+                    <h2>UK Tours Department</h2>
+                    <i><p class="courgetteFont">Currently viewing: Cardiff</p></i>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#header-info">To top</a></li>
+                    <li><a href="./index.html">Main page</a></li>
+                    <li id="drop-down-tours">
+                        <p>Tours</p>
+                        <ul>
+                            <li><a href="./londonTour.html">London tour</a></li>
+                            <li><a href="./cardiffTour.html">Cardiff tour</a></li>
+                            <li><a href="./edinburghTour.html">Edinburgh tour</a></li>
+                            <li><a href="./belfastTour.html">Belfast tour</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <h1 class="contentHeader courgetteFont">Cardiff....</h1>
+            <p class = "contentParagraph">....the capital city of Wales, is a vibrant and historic destination that offers a unique blend of modernity and tradition. Situated on the banks of the River Taff, Cardiff is a city that's proud of its Welsh roots and celebrates its rich heritage.</p>
+                <p class = "contentParagraph">With its impressive castle and Gothic architecture, Cardiff's historic center is a must-see for any visitor. But the city is also home to a thriving arts and culture scene, with numerous galleries, theaters, and music venues showcasing local talent and international stars alike.</p>
+                <p class = "contentParagraph">Foodies will love the city's diverse culinary offerings, from traditional Welsh dishes like cawl and Welsh rarebit to international cuisine from all corners of the globe. And with a lively nightlife that includes everything from cozy pubs to buzzing nightclubs, there's always something to do after the sun goes down.</p>
+                <p class = "contentParagraph">But what really sets Cardiff apart is its friendly and welcoming atmosphere. With a strong sense of community and a warm Welsh welcome, Cardiff is a city that's easy to fall in love with. So why not come and explore this charming capital for yourself and see why it's quickly becoming one of the UK's most popular destinations.</p>
+            </p>
+        </section>
+        <section id="gallery">
+            <img src="IMGS/CARDIFF/z1.jpg" id="big" class ="galleryImg"><br>
+            <div id="small-img-holder">
+                <img src="IMGS/CARDIFF/z1.jpg" class="small" onclick="changeImage(this)" style="opacity: 1;">
+                <img src="IMGS/CARDIFF/z2.jpg" class="small" onclick="changeImage(this)">
+                <img src="IMGS/CARDIFF/z3.jpg" class="small" onclick="changeImage(this)">
+                <img src="IMGS/CARDIFF/z4.jpg" class="small" onclick="changeImage(this)">
+            </div>
+        </section><br>
+        <section id="ratings">
+            <h1 class="courgetteFont">Ratings</h1>
+            <div id="cards-holder">
+                
+            </div>
+            <button class="btn" onclick="openRating()">Add rating</button>
+        </section>
+        <hr>
+        <section id="star-customisation">
+            <h1 class="courgetteFont">Filter through offers...</h1>
+            <div>
+                <label for="one-star-radio" onclick="changeOffer(1)">
+                    <input type="radio" id="one-star-radio" name="stars" checked>
+                    <img src="./IMGS/starFilled.png">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="two-star-radio" onclick="changeOffer(2)">
+                    <input type="radio" id="two-star-radio" name="stars">
+                    <img src="./IMGS/starFilled.png">
+                    <img src="./IMGS/starFilled.png">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="three-star-radio" onclick="changeOffer(3)">
+                    <img src="./IMGS/starFilled.png">
+                    <img src="./IMGS/starFilled.png">
+                    <img src="./IMGS/starFilled.png">
+                    <input type="radio" id="three-star-radio" name="stars">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </section>
+        <article data="one-star">
+            <h1>One star</h1>
+        </article>
+        <article data="two-star">
+            <h1>Two star</h1>
+        </article>
+        <article data="three-star">
+            <h1>Three star</h1>
+        </article>
+        <footer>
+            <div>
+                <a href = "tel"><img src = "https://cdn-icons-png.flaticon.com/512/126/126509.png" class = "footerIcons">Call us!</a>
+                <a href="mailto:department@uktours.com"><img src = "https://cdn-icons-png.flaticon.com/512/646/646094.png" class = "footerIcons">Mail us!</a><br>
+            </div>
+            <p id="footerPar">®UK Tours | All rights reserved</p>
+        </footer>
+    </main>
+
+    <div id="add-rating-holder">
+        <div id="add-rating-box">
+            <h1 class="courgetteFont contentHeader">Add rating...</h1>
+            <h1 class="close-btn contentHeader" onclick="closeRating()" title="Close">X</h1>
+            <div>
+                <p>Email:<input type="email" id="rating-email"></p>
+                <div>
+                    <p>Stars:</p>
+                    <img src="./IMGS/starUnfilled.png" id="star-1" onclick="changeStars(1)">
+                    <img src="./IMGS/starUnfilled.png" id="star-2" onclick="changeStars(2)">
+                    <img src="./IMGS/starUnfilled.png" id="star-3" onclick="changeStars(3)">
+                    <img src="./IMGS/starUnfilled.png" id="star-4" onclick="changeStars(4)">
+                    <img src="./IMGS/starUnfilled.png" id="star-5" onclick="changeStars(5)">
+                </div>
+                <p>Content:</p>
+                <textarea id="rating-description"></textarea>
+            </div>
+            <button class="btn" onclick="addRating()">
+                Add rating
+            </button>
+        </div>
+    </div>
+</body>
+</html>
