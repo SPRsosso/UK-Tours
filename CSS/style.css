@@ -69,7 +69,7 @@ header > div, nav {
     bottom: 0;
     z-index: 1;
     rotate: -30deg;
-    animation: text-pop 4.5s infinite;
+    animation: linear text-pop 10s infinite;
 }
 
 #banner {
@@ -362,6 +362,7 @@ footer a:hover::after {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    box-shadow: 0 15px 10px rgb(202, 202, 202);
 }
 
 #star-customisation > div {
@@ -575,7 +576,7 @@ ul.contentParagraph a {
 #offers article {
     position: absolute;
     width: 100%;
-    transition: left 2s;
+    transition: left 1s;
 }
 
 #offers :nth-child(1) {
@@ -588,4 +589,70 @@ ul.contentParagraph a {
 
 #offers :nth-child(3) {
     left: 200vw;
+}
+
+.buy-offer-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.buy-offer {
+    width: 22%;
+    height: 200px;
+    border: 2px solid rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.buy-offer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.buy-offer p {
+    font-size: 20px;
+    color: var(--c6);
+    font-weight: 900;
+}
+
+.buy-offer button {
+    font-size: 18px;
+    background-color: var(--c2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.buy-offer button:hover {
+    background-color: var(--c4);
+    transform: scale(110%, 110%);
+}
+
+#to-top {
+    display: none;
+}
+
+@keyframes text-pop {
+    0% {
+        transform: scale(100%, 100%);
+    }
+
+    50% {
+        transform: scale(120%, 120%);
+    }
+
+    100% {
+        transform: scale(100%, 100%);
+    }
 }

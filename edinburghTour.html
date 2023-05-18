@@ -42,7 +42,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#header-info">To top</a></li>
+                    <li id="to-top"><a href="#header-info">To top</a></li>
                     <li><a href="./index.html">Main page</a></li>
                     <li id="drop-down-tours">
                         <p>Tours</p>
@@ -64,7 +64,9 @@
                 <p class = "contentParagraph">Foodies will love Edinburgh's culinary scene, which ranges from traditional Scottish fare like haggis and neeps to international cuisine from all over the world. And with a bustling nightlife that includes everything from cozy pubs to trendy nightclubs, there's always something to do after dark.</p>
                 <p class = "contentParagraph">But perhaps what makes Edinburgh truly special is its people. With a reputation for friendliness and hospitality, Edinburgh is a city that welcomes visitors with open arms. So why not come and explore this vibrant capital for yourself and discover why it's one of Scotland's most beloved destinations.</p>
             </p>
-        </section       <img src="IMGS/EDINBURGH/z1.jpg" id="big" class ="galleryImg"><br>
+        </section>
+        <section id="gallery">
+            <img src="IMGS/EDINBURGH/z1.jpg" id="big" class ="galleryImg"><br>
             <div id="small-img-holder">
                 <img src="IMGS/EDINBURGH/z1.jpg" class="small" onclick="changeImage(this)" style="opacity: 1;">
                 <img src="IMGS/EDINBURGH/z2.jpg" class="small" onclick="changeImage(this)">
@@ -79,7 +81,6 @@
             </div>
             <button class="btn" onclick="openRating()">Add rating</button>
         </section>
-        <hr>
         <section id="star-customisation">
             <h1 class="courgetteFont">Filter through offers...</h1>
             <div>
@@ -105,8 +106,8 @@
                 </label>
             </div>
         </section>
-        <div style="width: 100%; overflow-x: hidden;">
-            <article data="one-star" class = "offer" id = "ar1">
+        <div id="offers">
+            <article data="one-star">
                 <section>
                     <h1 class="courgetteFont contentHeader">1 star offer</h1>
                     <p class="contentParagraph">
@@ -115,7 +116,23 @@
                         <i><b>Attractions:</b></i>
                     </p>
                     <ul class="contentParagraph">
-                        <li><a href="https://www.google.pl/maps/place/Sakura+Edinburgh+Guest+House/@55.9415515,-3.288597,12z/data=!4m13!1m5!2m4!1sHotele!5m1!4e8!6e3!3m6!1s0x4887c77f7c10f15d:0xb024efcf89a4ad2c!8m2!3d55.939192!4d-3.180108!15sCgZIb3RlbGWSAQ5pbmRvb3JfbG9kZ2luZ-ABAA!16s%2Fg%2F1tmpdhqy" target="_blank" title="Check their site">Sakura Edinburgh Guest House</a></li>
+                        <li>Edinburgh Castle</li>
+                        <li>Crown Jewels</li>
+                        <li>St. Giles' Cathedral</li>
+                        <li>Palace of Holyroodhouse</li>
+                        <li>the official residence of the Queen in Scotland</li>
+                        <li>Edinburgh Festival Theatre or the Usher Hall</li>
+                        <li>Royal Botanic Garden</li>
+                        <li>Arthur's Seat</li>
+                        <li>Dean Village</li>
+                        <li>Water of Leith</li>
+                        <li>Dean Gallery</li>
+                        <li>Royal Yacht Britannia</li>
+                        <li>National Museum of Scotland</li>
+                        <li>Scottish Parliament</li>
+                        <li>Old Town</li>
+                        <li>Greyfriars Bobby statue</li>
+                        <li>Victoria Street</li>
                     </ul>
                 </section>
                 <section>
@@ -156,45 +173,169 @@
                         Remember, during your stay in Edinburgh, you will be accommodated at the 3.2-star Sakura Edinburgh Guest House. Enjoy your time exploring the city and have a wonderful trip!
                     </p>
                 </section>
+                <section>
+                    <div class="buy-offer-box">
+                        <div class="buy-offer">
+                            <h1 class="contentHeader courgetteFont">1 Star Offer</h1>
+                            <div>
+                                <p>£289.99</p>
+                                <button>
+                                    Buy trip now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </article>
-            <article data="two-star" class = "offer" id = "ar2">
+            <article data="two-star">
+                <section>
+                    <h1 class="courgetteFont contentHeader">2 star offer</h1>
+                    <p class="contentParagraph">
+                        <i><b>Accomodation:</b></i> 1 star Travelodge Edinburgh Airport Ratho Station
+                        <br>
+                        <i><b>Attractions:</b></i>
+                    </p>
+                    <ul class="contentParagraph">
+                        <li>Edinburgh Castle</li>
+                        <li>Crown Jewels</li>
+                        <li>St. Giles' Cathedral</li>
+                        <li>Palace of Holyroodhouse</li>
+                        <li>the official residence of the Queen in Scotland</li>
+                        <li>Edinburgh Festival Theatre or the Usher Hall</li>
+                        <li>Royal Botanic Garden</li>
+                        <li>Arthur's Seat</li>
+                        <li>Dean Village</li>
+                        <li>Water of Leith</li>
+                        <li>Dean Gallery</li>
+                        <li>Royal Yacht Britannia</li>
+                        <li>National Museum of Scotland</li>
+                        <li>Scottish Parliament</li>
+                        <li>Old Town</li>
+                        <li>Greyfriars Bobby statue</li>
+                        <li>Victoria Street</li>
+                    </ul>
+                </section>
                 <section>
                     <h1 class="courgetteFont contentHeader">Day 1:</h1>
                     <p class="contentParagraph">
-                        You will start your day by visiting the Tower of London to learn about its history and see the Crown Jewels.
+                        You will start your day by visiting Edinburgh Castle. Explore the historic fortress, witness the Crown Jewels, and enjoy breathtaking views of the city from the castle walls.
                         <br>
-                        After that, you will walk across the Tower Bridge and visit the Tower Bridge Exhibition to learn about the bridge's design and construction.
+                        Afterward, take a stroll down the Royal Mile. Visit the St. Giles' Cathedral, browse through unique shops, and soak in the vibrant atmosphere of this famous street.
                         <br>
-                        You will then take a boat ride on the River Thames to see the city's famous landmarks.
+                        Next, make your way to the Palace of Holyroodhouse. Explore the official residence of the Queen in Scotland, learn about its fascinating history, and take a walk in the beautiful gardens.
+                        <br>
+                        In the evening, attend a traditional Scottish performance at the Edinburgh Festival Theatre or the Usher Hall.
                     </p>
                 </section>
                 <section>
                     <h1 class="courgetteFont contentHeader">Day 2:</h1>
                     <p class="contentParagraph">
-                        You will visit the British Museum to see the world-renowned collection of art and artifacts from around the globe, including the Rosetta Stone and the Parthenon sculptures.
+                        You will start your day by exploring the Royal Botanic Garden. Wander through the stunning gardens, greenhouse, and enjoy a peaceful moment amidst nature.
                         <br>
-                        Next, you will visit St. Paul's Cathedral, designed by Sir Christopher Wren, and admire its stunning dome and interior.
+                        From there, hike up Arthur's Seat, an ancient volcano and one of Edinburgh's most iconic landmarks. Enjoy panoramic views of the city and the surrounding landscapes.
                         <br>
-                        Finally, you will visit Covent Garden, known for its independent cafes, pubs, and shopping.
+                        Next, head to the picturesque Dean Village. Take a leisurely walk along the Water of Leith, admire the charming architecture, and visit the Dean Gallery for some art appreciation.
+                        <br>
+                        In the afternoon, take a guided tour of the Royal Yacht Britannia. Explore the luxurious ship that served the British royal family for over 40 years.
                     </p>
                 </section>
                 <section>
                     <h1 class="courgetteFont contentHeader">Day 3:</h1>
                     <p class="contentParagraph">
-                        You will start your day with a ride on the London Eye for panoramic views of the city.
+                        You will begin your day by visiting the National Museum of Scotland. Explore the diverse exhibits, ranging from natural history and world cultures to science and technology.
                         <br>
-                        You will then visit the Southbank Centre to see what exhibitions and performances are on during your visit.
+                        Afterward, visit the Scottish Parliament and take a guided tour to learn about Scotland's devolved political system.
                         <br>
-                        Finally, you will visit the Tate Modern museum to see works by famous artists such as Pablo Picasso and Andy Warhol.
+                        Next, explore the historic streets of the Old Town. Visit the iconic Greyfriars Bobby statue, walk along the atmospheric Victoria Street, and discover the hidden closes and wynds.
+                        <br>
+                        End your tour by attending a ghost tour in the evening. Explore the haunted side of Edinburgh's history and legends.
                     </p>
+                </section>
+                <section>
+                    <div class="buy-offer-box">
+                        <div class="buy-offer">
+                            <h1 class="contentHeader courgetteFont">2 Star Offer</h1>
+                            <div>
+                                <p>£399.99</p>
+                                <button>
+                                    Buy trip now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
             <article data="three-star">
-                <h1>Three star</h1>
+                <section>
+                    <h1 class="courgetteFont contentHeader">2 star offer</h1>
+                    <p class="contentParagraph">
+                        <i><b>Accomodation:</b></i> 4 stars voco Edinburgh - Haymarket, an
+                        <br>
+                        <i><b>Attractions:</b></i>
+                    </p>
+                    <ul class="contentParagraph">
+                        <li>Edinburgh Castle</li>
+                        <li>Crown Jewels</li>
+                        <li>St. Giles' Cathedral</li>
+                        <li>Palace of Holyroodhouse</li>
+                        <li>the official residence of the Queen in Scotland</li>
+                        <li>Edinburgh Festival Theatre or the Usher Hall</li>
+                        <li>Royal Botanic Garden</li>
+                        <li>Arthur's Seat</li>
+                        <li>Dean Village</li>
+                        <li>Water of Leith</li>
+                        <li>Dean Gallery</li>
+                        <li>Royal Yacht Britannia</li>
+                        <li>National Museum of Scotland</li>
+                        <li>Scottish Parliament</li>
+                        <li>Old Town</li>
+                        <li>Greyfriars Bobby statue</li>
+                        <li>Victoria Street</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 1:</h1>
+                    <p class="contentParagraph">
+                        You will start your day by visiting Edinburgh Castle. Explore the historic fortress, witness the Crown Jewels, and enjoy breathtaking views of the city from the castle walls. <br>
+                        Afterward, take a stroll down the Royal Mile. Visit St. Giles' Cathedral, browse through unique shops, and soak in the vibrant atmosphere of this famous street. <br>
+                        Next, make your way to the Palace of Holyroodhouse. Explore the official residence of the Queen in Scotland, learn about its fascinating history, and take a walk in the beautiful gardens. <br>
+                        In the evening, attend a traditional Scottish performance at the Edinburgh Festival Theatre or the Usher Hall.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 2:</h1>
+                    <p class="contentParagraph">
+                        You will start your day by exploring the Royal Botanic Garden. Wander through the stunning gardens, visit the glasshouses, and enjoy a peaceful moment amidst nature. <br>
+                        From there, hike up Arthur's Seat, an ancient volcano and one of Edinburgh's most iconic landmarks. Enjoy panoramic views of the city and the surrounding landscapes. <br>
+                        Next, head to the picturesque Dean Village. Take a leisurely walk along the Water of Leith, admire the charming architecture, and visit the Dean Gallery for some art appreciation. <br>
+                        In the afternoon, take a guided tour of the Royal Yacht Britannia. Explore the luxurious ship that served the British royal family for over 40 years.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 3:</h1>
+                    <p class="contentParagraph">
+                        You will begin your day by visiting the National Museum of Scotland. Explore the diverse exhibits, ranging from natural history and world cultures to science and technology. <br>
+                        Afterward, visit the Scottish Parliament and take a guided tour to learn about Scotland's devolved political system. <br>
+                        Next, explore the historic streets of the Old Town. Visit the iconic Greyfriars Bobby statue, walk along the atmospheric Victoria Street, and discover the hidden closes and wynds. <br>
+                        End your tour by attending a ghost tour in the evening. Explore the haunted side of Edinburgh's history and legends. <br>
+                        Remember, during your stay in Edinburgh, you will be accommodated at the 5-star Hillhouse hotel. Enjoy your time exploring the city and have a wonderful trip!
+                    </p>
+                </section>
+                <section>
+                    <div class="buy-offer-box">
+                        <div class="buy-offer">
+                            <h1 class="contentHeader courgetteFont">3 Star Offer</h1>
+                            <div>
+                                <p>£470.49</p>
+                                <button>
+                                    Buy trip now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </article>
         </div>
-        <section id="gallery">
-     
         <footer>
             <div>
                 <a href = "tel"><img src = "https://cdn-icons-png.flaticon.com/512/126/126509.png" class = "footerIcons">Call us!</a>

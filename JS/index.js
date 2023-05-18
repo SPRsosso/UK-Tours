@@ -4,6 +4,7 @@ document.querySelector("#banner").addEventListener("click", () => {
 
 let aniMenu = document.querySelector("#animate-menu");
 let header = document.querySelector("header");
+let toTop = document.querySelector("#to-top");
 
 function animateMenu() {
     requestAnimationFrame(animateMenu);
@@ -17,11 +18,13 @@ function animateMenu() {
         setTimeout(() => {
             header.style.top = '0px'
             header.style.height = '100px'
+            toTop.style.display = "block";
         }, 400);
     } else {
         setTimeout(() => {
             header.style.top = '0px'
             header.style.height = '130px'
+            toTop.style.display = "none";
         }, 400);
     }
 }

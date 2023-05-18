@@ -42,7 +42,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#header-info">To top</a></li>
+                    <li id="to-top"><a href="#header-info">To top</a></li>
                     <li><a href="./index.html">Main page</a></li>
                     <li id="drop-down-tours">
                         <p>Tours</p>
@@ -75,8 +75,6 @@
                 <img src="IMGS/BELFAST/z4.jpg" class="small" onclick="changeImage(this)">
             </div>
         </section><br>
-
-        <!-- Napisz nad tym -->
         <section id="ratings">
             <h1 class="courgetteFont">Ratings</h1>
             <div id="cards-holder">
@@ -84,7 +82,6 @@
             </div>
             <button class="btn" onclick="openRating()">Add rating</button>
         </section>
-        <hr>
         <section id="star-customisation">
             <h1 class="courgetteFont">Filter through offers...</h1>
             <div>
@@ -110,18 +107,205 @@
                 </label>
             </div>
         </section>
-        <div style="width: 100%; overflow-x: hidden;" id = "articles">
-            <article data="one-star" class = "offer" id = "ar1" style="position: absolute; left: 0;">
-            <h1>One star</h1>
+        <div id="offers">
+            <article data="one-star">
+                <section>
+                    <h1 class="courgetteFont contentHeader">1 star offer</h1>
+                    <p class="contentParagraph">
+                        <i><b>Accomodation:</b></i> Dream Apartments Belfast
+                        <br>
+                        <i><b>Attractions:</b></i>
+                    </p>
+                    <ul class="contentParagraph">
+                        <li>Titanic Quarter</li>
+                        <li>Belfast City Hall</li>
+                        <li>Cathedral Quarter</li>
+                        <li>Peace Wall</li>
+                        <li>Causeway Coastal Route</li>
+                        <li>Giant's Causeway</li>
+                        <li>Cushendall and Ballintoy</li>
+                        <li>Carrick-a-Rede Rope Bridge</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 1:</h1>
+                    <p class="contentParagraph">
+                        Upon checking in at Dream Apartment Belfast, you will start your adventure by exploring the historic Titanic Quarter. You will visit The Titanic Belfast, a fascinating museum dedicated to the legendary ship Titanic. Learn about the construction and tragic sinking of this incredible vessel. Afterward, you will take a stroll along the Titanic Quarter waterfront, enjoying beautiful views of the sea.
+                        <br>
+                        In the afternoon, we recommend taking a drive to the city center, where you will find a vibrant atmosphere and numerous attractions. Begin by visiting the majestic Belfast City Hall, an iconic symbol of the city. From there, you can explore the nearby Cathedral Quarter, known for its charming cobblestone streets and lively pubs. Don't forget to indulge in some traditional Irish cuisine while you're here!
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 2:</h1>
+                    <p class="contentParagraph">
+                        On the second day, you will delve into Belfast's troubled history by taking a tour of the political murals in West Belfast. These murals depict the city's divided past and provide insight into the conflict known as The Troubles. An experienced guide will lead you through the neighborhoods, explaining the historical significance of each mural and the events they represent.
+                        <br>
+                        Afterward, you can visit the Peace Wall, a symbolic barrier that once separated Catholic and Protestant communities. Consider leaving a message of peace and hope on the wall to contribute to the city's ongoing reconciliation efforts.
+                        <br>
+                        In the evening, you will have the opportunity to experience Belfast's thriving nightlife. Head to the buzzing Cathedral Quarter, where you will find an array of pubs, bars, and live music venues. Immerse yourself in the lively atmosphere and enjoy some traditional Irish music and dance.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 3:</h1>
+                    <p class="contentParagraph">
+                        On your final day, you will embark on a scenic journey along the Causeway Coastal Route. This breathtaking coastal drive will take you past stunning landscapes, including the famous Giant's Causeway. Marvel at the hexagonal basalt columns formed by ancient volcanic activity. Take your time to explore the site and learn about the fascinating legends associated with it.
+                        <br>
+                        Continuing along the route, you will encounter picturesque villages such as Cushendall and Ballintoy, where you can take in the charm of the Irish countryside. If time permits, you might also want to visit Carrick-a-Rede Rope Bridge, known for its exhilarating views and thrilling crossing experience.
+                        <br>
+                        In the evening, return to Belfast and consider enjoying a farewell dinner at one of the city's renowned restaurants. Reflect on your memorable stay in Belfast and savor the flavors of Northern Irish cuisine.
+                    </p>
+                </section>
+                <section>
+                    <div class="buy-offer-box">
+                        <div class="buy-offer">
+                            <h1 class="contentHeader courgetteFont">1 Star Offer</h1>
+                            <div>
+                                <p>£299.99</p>
+                                <button>
+                                    Buy trip now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>  
+            <article data="two-star">
+                <section>
+                    <h1 class="courgetteFont contentHeader">2 star offer</h1>
+                    <p class="contentParagraph">
+                        <i><b>Accomodation:</b></i> 2 stars ETAP Belfast
+                        <br>
+                        <i><b>Attractions:</b></i>
+                    </p>
+                    <ul class="contentParagraph">
+                        <li>Belfast City Hall</li>
+                        <li>St. George's Market</li>
+                        <li>Botanic Gardens</li>
+                        <li>Ulster Museum</li>
+                        <li>Giant's Causeway</li>
+                        <li>Troubles Gallery</li>
+                        <li>Antrim Coast</li>
+                        <li>Falls Road</li>
+                        <li>Giant's Causeway</li>
+                        <li>Causeway Coastal Route</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 1:</h1>
+                    <p class="contentParagraph">
+                        Upon checking in at ETAP Belfast hotel, you will meet your guide and start your Belfast adventure. Begin with a visit to the historic Belfast City Hall, where you will learn about the city's rich history and architectural grandeur. Take a guided tour of the building and explore its beautiful interiors.
+                        <br>
+                        Afterward, you will head to the vibrant St. George's Market, one of Belfast's oldest attractions. Wander through the bustling stalls filled with local produce, crafts, and delicious food. Your guide will introduce you to the diverse array of vendors and help you navigate the market.
+                        <br>
+                        In the afternoon, you will visit the Ulster Museum, located in the Botanic Gardens. Explore its impressive collection of art, history, and natural sciences, including the fascinating Troubles Gallery, which provides insights into Northern Ireland's recent past.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 2:</h1>
+                    <p class="contentParagraph">
+                        On the second day, you will venture outside of Belfast to explore the stunning Giant's Causeway and the Antrim Coast. Enjoy a scenic drive along the Causeway Coastal Route, accompanied by your knowledgeable guide who will share interesting facts and stories along the way.
+                        <br>
+                        Upon reaching the Giant's Causeway, you will have the opportunity to walk among the hexagonal basalt columns and marvel at the breathtaking natural wonder. Learn about the fascinating myths and legends surrounding this UNESCO World Heritage Site.
+                        <br>
+                        Continue your journey along the Antrim Coast, stopping at picturesque locations such as Carrick-a-Rede Rope Bridge and Dunluce Castle. Your guide will provide historical context and point out the most scenic viewpoints for you to capture memorable photos.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 3:</h1>
+                    <p class="contentParagraph">
+                        On your final day, you will explore Belfast's troubled history and political murals with your guide. Begin in the Falls Road area, where you will witness murals representing nationalist perspectives. Learn about the historical significance of these murals and the impact of The Troubles on the local community.
+                        <br>
+                        Next, you will visit the Shankill Road area, known for its loyalist murals. Gain a deeper understanding of the complex political and cultural divisions that have shaped Belfast's history. Your guide will provide insights into the peace process and ongoing reconciliation efforts.
+                        <br>
+                        In the afternoon, you will have the opportunity to visit the iconic Crumlin Road Gaol. Take a guided tour of this former prison and learn about its dark history, including the stories of political prisoners and the conditions they endured.
+                        <br>
+                        Conclude your tour by exploring the vibrant Cathedral Quarter, where you can soak up the atmosphere of lively pubs, trendy restaurants, and arts venues. Bid farewell to your guide and enjoy your evening in Belfast.
+                    </p>
+                </section>
+                <section>
+                    <div class="buy-offer-box">
+                        <div class="buy-offer">
+                            <h1 class="contentHeader courgetteFont">2 Star Offer</h1>
+                            <div>
+                                <p>£404.99</p>
+                                <button>
+                                    Buy trip now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </article>
-            <article data="two-star" class = "offer" id = "ar2" style="position: absolute; left: 100vh;">
-                <h1>Two star</h1>
-            </article>
-            <article data="three-star" class = "offer" id = "ar3" style="position: absolute; left: 200vh;">
-                <h1>Three star</h1>
+            <article data="three-star">
+                <section>
+                    <h1 class="courgetteFont contentHeader">3 star offer</h1>
+                    <p class="contentParagraph">
+                        <i><b>Accomodation:</b></i> 5 stars Peartree Hill
+                        <br>
+                        <i><b>Attractions:</b></i>
+                    </p>
+                    <ul class="contentParagraph">
+                        <li>Belfast City Hall</li>
+                        <li>St. George's Market</li>
+                        <li>Titanic Belfast museum</li>
+                        <li>Giant's Causeway</li>
+                        <li>Carrick-a-Rede Rope Bridge</li>
+                        <li>Antrim Coast</li>
+                        <li>Dunluce Castle</li>
+                        <li>Falls Road</li>
+                        <li>Shankill Road</li>
+                        <li>Ulster Museum</li>
+                        <li>Botanic Gardens</li>
+                        <li>Cathedral Quarter</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 1:</h1>
+                    <p class="contentParagraph">
+                        Upon checking in at the luxurious Peatree Hill Belfast hotel, you will meet your guide who will lead you on an exciting exploration of the city's top attractions. Start your day by visiting the historic Belfast City Hall. You will marvel at its magnificent architecture and learn about the city's rich history through a guided tour.
+                        <br>
+                        Afterward, your guide will take you to the vibrant St. George's Market. Immerse yourself in the lively atmosphere as you browse through the diverse array of stalls offering local produce, crafts, and delicious food. Your guide will provide insights into the market's history and introduce you to the friendly vendors.
+                        <br>
+                        In the afternoon, you will visit the renowned Titanic Belfast museum. With your guide by your side, you will delve into the captivating story of the Titanic, from its construction in Belfast to its tragic sinking. Explore the interactive exhibits and gain a deeper understanding of this legendary ship's history.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 2:</h1>
+                    <p class="contentParagraph">
+                        On the second day, you will venture outside of Belfast to discover the natural wonders of Northern Ireland. Your guide will accompany you as you explore the enchanting Giant's Causeway. You will be in awe of the unique hexagonal basalt columns and learn about the fascinating geological formations. Take your time to soak in the breathtaking views and listen to your guide's explanations.
+                        <br>
+                        Continuing along the stunning Antrim Coast, you will visit the Carrick-a-Rede Rope Bridge. Prepare for an exhilarating experience as you cross the bridge, suspended high above the crashing waves below. Your guide will share stories of the bridge's history and significance.
+                        <br>
+                        In the afternoon, you will explore the captivating ruins of Dunluce Castle. Wander through its dramatic cliff-top setting and listen to tales of its turbulent past. Enjoy the panoramic views of the coastline and capture some memorable photos.
+                    </p>
+                </section>
+                <section>
+                    <h1 class="courgetteFont contentHeader">Day 3:</h1>
+                    <p class="contentParagraph">
+                        On your final day, your guide will take you on a tour of Belfast's political murals, providing insights into the city's troubled history. Begin in the Falls Road area, where you will see murals representing nationalist perspectives. Your guide will share stories about The Troubles and the impact on the local community.
+                        <br>
+                        Next, you will visit the Shankill Road area, known for its loyalist murals. Gain a deeper understanding of the complex political and cultural divisions that have shaped Belfast's history. Your guide will offer valuable perspectives and foster meaningful discussions.
+                        <br>
+                        In the afternoon, you will have the opportunity to visit the Ulster Museum, located in the picturesque Botanic Gardens. Your guide will highlight key exhibits, including art, history, and natural sciences, enriching your visit with fascinating insights.
+                        <br>
+                        Conclude your tour by exploring the charming Cathedral Quarter. Your guide can recommend trendy restaurants and stylish bars where you can enjoy the vibrant atmosphere and indulge in Northern Irish cuisine.
+                    </p>
+                </section>
+                <section>
+                    <div class="buy-offer-box">
+                        <div class="buy-offer">
+                            <h1 class="contentHeader courgetteFont">3 Star Offer</h1>
+                            <div>
+                                <p>£520.99</p>
+                                <button>
+                                    Buy trip now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </article>
         </div>
-        
         <footer>
             <div>
                 <a href = "tel"><img src = "https://cdn-icons-png.flaticon.com/512/126/126509.png" class = "footerIcons">Call us!</a>
