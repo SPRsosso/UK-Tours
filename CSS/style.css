@@ -564,6 +564,41 @@ ul.contentParagraph a {
     color: var(--c3);
 }
 
+.slide-animation 
+{
+    animation: slide 0.6s ease-in-out forwards;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes slide 
+{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.rev-slide-animation 
+{
+    animation: rev-slide 0.6s ease-in-out forwards;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes rev-slide 
+{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
 @keyframes text-pop {
     0% {
         transform: scale(100%, 100%);
